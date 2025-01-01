@@ -1,7 +1,8 @@
 /* Inheritance */
 
-// Inheritance allows a class to reuse atributes and functions from another class.
-// You can make a child class which inherits from a parent class and also a grandchild class that inherits from the child class.
+// Inheritance allows a class to reuse atributes and functions from another
+// class. You can make a child class which inherits from a parent class and also
+// a grandchild class that inherits from the child class.
 
 #include <iostream>
 using std::cout;
@@ -15,15 +16,13 @@ public:
 };
 
 // Derived class (child)
-class Cat: public Animal {
+class Cat : public Animal {
 public:
-  void meow() {
-    cout << "The cat is meowing. Nyannn ₍^. .^₎⟆" << '\n';
-  }
+  void meow() { cout << "The cat is meowing. Nyannn ₍^. .^₎⟆" << '\n'; }
 };
 
 // Derived class (grandchild)
-class Kitten: public Cat {
+class Kitten : public Cat {
 public:
   void cry() {
     cout << "The kitten is crying for their mother. ≽^╥⩊╥^≼" << '\n';
@@ -35,7 +34,7 @@ int main() {
   nekochan.eat(); // Inherited function
   nekochan.meow();
   Kitten konekochan;
-  konekochan.eat(); // Inherited function
+  konekochan.eat();  // Inherited function
   konekochan.meow(); // Inherited function
   konekochan.cry();
   return 0;
