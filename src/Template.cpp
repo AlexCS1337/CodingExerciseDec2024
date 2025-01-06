@@ -1,7 +1,10 @@
 /* Templates */
 
 // A function template can be used to generate as many overloaded functions as needed, each using different data types
-//
+// With templates you can write a function or a class once and use it with different data types without rewriting the entire code for each type. 
+// Templates are important as they provide code reusability, type safety, and flexibility.
+
+
 #include <iostream>
 
 //function template to find the min for 2 values
