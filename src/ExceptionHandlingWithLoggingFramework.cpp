@@ -18,7 +18,7 @@ void funcA() {
 }
 
 void funcB() {
-    try 
+    try { 
         spdlog::info("Entering funcB");
         funcA();
     } catch (const std::runtime_error& e) {
