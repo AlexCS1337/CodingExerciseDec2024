@@ -12,6 +12,8 @@
 #include <iostream>
 #include <set>
 
+//EG: I'd say same as map, however where value is also the key in this case...
+
 int main() {
     std::set<std::string> cars = {"Ferrari", "Toyoto", "Mazda"};
     cars.insert("Hyundai");
