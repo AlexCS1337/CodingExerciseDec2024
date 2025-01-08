@@ -38,3 +38,11 @@ int main() {
   inu.animalSound();
   return 0;
 }
+
+// EG: This would be better demonstrated by making animalSound virtual and *overriding* in the derived classes.
+// Then dynamically creating specific animals of Animal type and demonstrating that appropriate derived class function is called via run-time binding i.e.
+//
+// Animal* inu = new Dog();
+// inu->animalSound();  // output: The dog says: wan wan
+// delete inu;
+
