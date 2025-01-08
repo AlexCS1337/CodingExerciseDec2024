@@ -5,7 +5,9 @@
 // a grandchild class that inherits from the child class.
 
 #include <iostream>
-using std::cout;
+using std::court;
+
+// EG: Could you perhaps also demonstrate private and protected inheritance i.e. why and when to use?
 
 // Base class
 class Animal {
