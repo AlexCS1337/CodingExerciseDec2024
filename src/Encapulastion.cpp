@@ -16,9 +16,11 @@ public:
   // Setters
   void setRiches(int r) { riches = r; }
   void setName(string n) { name = n; }
+
+  // EG: I would normally make Getters const i.e. to avoid side effects i.e. as shown
   // Getters
-  int getRiches() { return riches; }
-  string getName() { return name; }
+  int getRiches() const { return riches; }
+  string getName() const { return name; }
 };
 
 int main() {
