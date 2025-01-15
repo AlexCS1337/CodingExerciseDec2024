@@ -8,7 +8,7 @@
 // Base class
 class Animal {
   public:
-    void animalSound() {
+    virtual void animalSound() {
       std::cout << "The animal makes a sound \n";
     }
 };
@@ -16,7 +16,7 @@ class Animal {
 // Derived class
 class Cat : public Animal {
   public:
-    void animalSound() {
+    void animalSound() override {
       std::cout << "The cat says: nyan nyan ₍^. .^₎⟆\n";
     }
 };
@@ -24,18 +24,18 @@ class Cat : public Animal {
 // Derived class
 class Dog : public Animal {
   public:
-    void animalSound() {
+    void animalSound() override {
       std::cout << "The dog says: wan wan \n";
     }
 };
 
 int main() {
-  Animal generalAnimal;
-  Cat neko;
-  Dog inu;
-  generalAnimal.animalSound();
-  neko.animalSound();
-  inu.animalSound();
+  Animal* neko = new Cat();
+  Animal* inu = new Dog();
+  neko->animalSound();
+  delete neko;
+  inu->animalSound();
+  delete inu;
   return 0;
 }
 
