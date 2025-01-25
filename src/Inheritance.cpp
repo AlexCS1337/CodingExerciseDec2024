@@ -5,7 +5,6 @@
 // a grandchild class that inherits from the child class.
 
 #include <iostream>
-using std::court;
 
 // EG: Could you perhaps also demonstrate private and protected inheritance i.e. why and when to use?
 
@@ -13,21 +12,21 @@ using std::court;
 class Animal {
 public:
   void eat() {
-    cout << "The animal is eating. mogu mogu (○ ^ω^)_旦~~♪" << '\n';
+    std::cout << "The animal is eating. mogu mogu (○ ^ω^)_旦~~♪" << '\n';
   }
 };
 
 // Derived class (child)
 class Cat : public Animal {
 public:
-  void meow() { cout << "The cat is meowing. Nyannn ₍^. .^₎⟆" << '\n'; }
+  void meow() { std::cout << "The cat is meowing. Nyannn ₍^. .^₎⟆" << '\n'; }
 };
 
 // Derived class (grandchild)
 class Kitten : public Cat {
 public:
   void cry() {
-    cout << "The kitten is crying for their mother. ≽^╥⩊╥^≼" << '\n';
+    std::cout << "The kitten is crying for their mother. ≽^╥⩊╥^≼" << '\n';
   }
 };
 
